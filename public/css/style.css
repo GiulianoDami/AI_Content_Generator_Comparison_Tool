@@ -13,25 +13,27 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
     background-color: #444;
+    overflow: hidden;
 }
 
 nav a {
-    color: #fff;
-    padding: 14px 20px;
-    text-decoration: none;
+    float: left;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #575757;
+    background-color: #ddd;
+    color: black;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     overflow: hidden;
 }
 
@@ -42,8 +44,8 @@ nav a:hover {
 
 .tool-item {
     background-color: #fff;
-    margin: 20px 0;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -53,7 +55,7 @@ nav a:hover {
 }
 
 .tool-item p {
-    margin: 10px 0;
+    color: #555;
 }
 
 .tool-details {
@@ -61,20 +63,28 @@ nav a:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
 }
 
-.tool-details h2 {
-    margin-top: 0;
+.tool-details h1 {
+    color: #333;
 }
 
-.tool-details section {
+.tool-details .section {
     margin-bottom: 20px;
 }
 
-.tool-details section h3 {
+.tool-details .section h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
+}
+
+.tool-details .section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.tool-details .section li {
+    margin: 5px 0;
 }
 
 footer {
@@ -85,31 +95,4 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #575757;
-}
-
-.filter-section {
-    margin-bottom: 20px;
-}
-
-.filter-section label {
-    margin-right: 10px;
-}
-
-.filter-section select {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
