@@ -31,52 +31,50 @@ nav a:hover {
 
 .container {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .tool-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
 }
 
 .tool-item {
     background-color: #fff;
-    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px;
     border-radius: 5px;
-    margin-bottom: 20px;
-    width: 32%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tool-item img {
-    max-width: 100%;
-    height: auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.tool-item h3 {
-    padding: 10px;
-    margin: 0;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+.tool-item h2 {
+    margin-top: 0;
 }
 
 .tool-item p {
-    padding: 10px;
-    margin: 0;
+    margin: 10px 0;
 }
 
-.tool-item .details {
-    display: none;
-    padding: 10px;
-    background-color: #f8f8f8;
+.tool-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-.tool-item:hover .details {
-    display: block;
+.tool-details h2 {
+    margin-top: 0;
+}
+
+.tool-details section {
+    margin-bottom: 20px;
+}
+
+.tool-details section h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
 }
 
 footer {
@@ -87,4 +85,31 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    margin-right: 10px;
+}
+
+.filter-section select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
