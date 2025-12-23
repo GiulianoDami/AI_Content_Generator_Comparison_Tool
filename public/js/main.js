@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        const toolsContainer = document.getElementById('tools-container');
+        const toolsContainer = document.querySelector('.tools-container');
         sortedTools.forEach(tool => toolsContainer.appendChild(tool));
     });
 });
