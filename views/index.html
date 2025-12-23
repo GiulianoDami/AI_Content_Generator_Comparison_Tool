@@ -8,42 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>AI Content Generator Comparison Tool</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Compare AI Content Generators</h1>
     </header>
     <main>
         <section class="filters">
             <h2>Filters</h2>
-            <form id="filterForm">
-                <label for="category">Category:</label>
-                <select id="category" name="category">
-                    <option value="">All</option>
-                    <option value="blogging">Blogging</option>
-                    <option value="marketing">Marketing</option>
-                    <option value="writing">Writing</option>
-                </select>
-                <label for="sort">Sort By:</label>
-                <select id="sort" name="sort">
-                    <option value="rating">Rating</option>
-                    <option value="price">Price</option>
-                </select>
-                <button type="submit">Apply Filters</button>
-            </form>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="">All</option>
+                <option value="blogging">Blogging</option>
+                <option value="marketing">Marketing</option>
+                <option value="writing">Writing</option>
+            </select>
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="rating">Rating</option>
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+            </select>
         </section>
-        <section class="tools-list" id="toolsList">
-            <h2>Top AI Content Generator Tools</h2>
+        <section class="tools-list" id="tools-list">
             <!-- Tools will be dynamically inserted here -->
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 AI Content Generator Comparison Tool</p>
-    </footer>
     <script src="/scripts/index.js"></script>
 </body>
 </html>
