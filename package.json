@@ -15,10 +15,13 @@
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
-  "author": "Your Name",
-  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yourusername/AI_Content_Generator_Comparison_Tool.git"
-  }
+  },
+  "author": "Your Name",
+  "license": "MIT"
 }
