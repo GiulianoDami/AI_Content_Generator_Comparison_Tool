@@ -29,4 +29,6 @@ const contentGeneratorSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('ContentGenerator', contentGeneratorSchema);
+const ContentGenerator = mongoose.model('ContentGenerator', contentGeneratorSchema);
+
+module.exports = ContentGenerator;
